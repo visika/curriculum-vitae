@@ -1,0 +1,253 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \usepackage{hyperref}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+
+    % \renewcommand{\encodingdefault}{cg}
+    % \renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+  \vspace*{-9pt}
+  \begin{verse}
+    \textbf{#1}   #2
+  \end{verse}
+}
+
+\newcommand{\lineunder} {
+  \vspace*{-8pt} \\
+  \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+  {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+  \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+  { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+  \vspace*{-10pt}
+  \begin{center}
+    {\Huge \scshape {#1}}\\
+    #2 \\ #3
+  \end{center}
+  \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+  \begin{list}
+    {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+  \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+  \textbf{#1} #2 $\bullet$ #3\\
+  #4 \\
+  \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+  \textbf{#1} #2 $\bullet$ #3\\
+  #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\vspace*{-40pt}
+
+    
+
+%==== Profile ====%
+\vspace*{-10pt}
+\begin{center}
+  {\Huge \scshape {Mariano Mollo}}\\
+  Napoli, IT $\cdot$ marianomollo@protonmail.ch $\cdot$ +39 393 568 0123\\
+\end{center}
+
+%==== Education ====%
+\header{Educazione}
+\textbf{Università degli Studi di Napoli Federico II}\hfill Napoli, IT\\
+Laurea triennale in Fisica \textit{voto: 104/110} \hfill set 2015 -- ott 2019\\
+Tesi: \textit{Implementazione di un algoritmo KNN multiclasse su hardware quantistico}\\
+Argomento: quantum machine learning.
+Relatori: Giovanni Acampora, Autilia Vitiello\\
+\vspace{2mm}
+\textbf{Universidade de Coimbra}\hfill Coimbra, PT\\
+Esperienza Erasmus, Licenciatura em Física \hfill gen 2019 -- giu 2019\\
+\vspace{2mm}
+\textbf{Università degli Studi di Napoli Federico II}\hfill Napoli, IT\\
+Laurea magistrale in Fisica teorica \hfill set 2019 -- prev. giu 2022\\
+Impronta: sistemi complessi
+\vspace{2mm}
+
+%==== Experience ====%
+\header{Lavoro}
+\vspace{1mm}
+
+\textbf{Centro Musei delle Scienze Naturali e Fisiche} \hfill Napoli, IT\\
+\textit{Guida e assistente laboratoriale} \hfill gen 2020 -- mar 2020\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Visite guidate presso il Museo di Fisica
+	\item Laboratori didattici per classi scolastiche
+\end{itemize}
+\textbf{Autonomo} \hfill Napoli, IT\\
+\textit{Webmaster} \hfill 2015 -- oggi\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+  \item Gestione server GNU/Linux
+  \item Costruzione di siti web:
+        \href{https://www.monachelle.org}{www.monachelle.org} ---
+        \href{https://startup.monachelle.org}{startup.monachelle.org}
+\end{itemize}
+
+\header{Skill}
+\begin{tabular}{ p{0.2\linewidth} p{0.75\linewidth} }
+  Software: & Python (numpy, pandas, matplotlib), LaTeX, Git, GNU/Linux,
+              C, Arduino, Java, HTML/CSS/JS, imparando il Clojure \\
+  Hardware: & nozioni di elettronica analogica e digitale,
+              nozioni di impianistica elettrica,
+              esperienza con stampa 3D, fotografia \\
+  Lingue: & italiano, inglese (FIRST equivalente B2+),
+            portoghese (equivalente B1) \\
+  Brevetti e patenti: & patente B, sommozzatore aria 1° livello \\
+  Extra: & shodan in aikido, esperienza scout, lavoro manuale
+\end{tabular}
+\vspace{2mm}
+
+\header{Corsi}
+\textbf{Corso di formazione su fundrasing per i beni comuni} \hfill URBACT \\
+Progetto Civic eState, con la Scuola di Fundraising di Roma \hfill feb 2021 -- apr 2021\\
+\vspace*{2mm}
+\textbf{Software Carpentry Workshop on Linux Shell, Git and Python} \hfill ELIXIR-IIB\\
+Presso il CNR di Napoli, insegnante: Dr. Vincenza Colonna \hfill lug 2019\\
+\vspace*{2mm}
+\textbf{Learning How to Learn:} \hfill Coursera\\
+\textbf{Powerful mental tools to help you master tough subjects} \hfill ago 2016\\
+\url{http://coursera.org/verify/S7GW34U48WHD}\\
+\vspace*{2mm}
+
+\header{Volontariato}
+\textbf{PONYS (Physics and Optics Naples Young Students)}
+{\sl divulgatore scientifico} \hfill 2016 -- oggi\\
+\vspace{2mm}
+Vicepresidente 2021, segretario sezione EPS YM per due anni.
+
+\vspace{2mm}
+
+\textbf{Premi}
+
+\begin{description} \itemsep 1pt
+  \item [2017] \textbf{Premio per la Comunicazione Scientifica},
+        \url{http://www.sif.it/attivita/congresso/103/premiati}
+\end{description}
+
+\textbf{Organizzazione eventi}
+
+\begin{description} \itemsep 1pt
+  \item [dic 2020] \textbf{La pandemia vista da un fisico sperimentale},
+        con il prof. Luca Lista (UniNa);
+        \url{https://www.facebook.com/ponys.unina/videos/677029722931538}
+  \item [2018] \textbf{Fattorie Didattiche Aperte},
+        esperimenti di fisica presso l'Istituto Zooprofilattico di Portici
+  \item[mag 2018] \textbf{Pint of Science}, Pozzuoli, co-moderatore
+  \item [2017] \textbf{Physica in Fabula},
+        divulgazione ai bambini presso librerie di quartiere
+        \url{http://www.epsyoungminds.org/physica-in-fabula/}
+  \item [set 2017] \textbf{Notte Europea dei Ricercatori},
+        esperimenti di fisica nelle stazioni metro
+        \url{https://www.epsyoungminds.org/european-researchers-night-2017-in-naples/}
+  \item[giu 2017] \textbf{Physics for sustainable development \& Fund Raising Concert}
+        con Barbara Capone, di Sunshine4Palestine.
+        \url{https://www.epsyoungminds.org/physics-for-sustainable-development-fund-raising-concert/}
+  \item [mag 2017] \textbf{Futuro Remoto},
+        formazione dei volontari, esperimenti in piazza,
+        \url{https://www.primapagina.sif.it/article/636/futuro-remoto-2017-connessioni}
+  \item[mag 2017] \textbf{EPS YM Leadership Meeting},
+        in collaborazione con la European Physical Society (ESP),
+        il Dipartimento di Fisica di Napoli,
+        la Società Italiana di Fisica (SIF),
+        l’Istituto di Science Applicate e Sistemi Intelligenti (ISASI)
+        e l’Istituto Nazionale di Fisica Nucleare (INFN).
+        \url{http://www.isasi.cnr.it/?p=2118}
+  \item [apr 2017] \textbf{Parco Avventura Scientifico},
+        esperimenti di fisica a Scampia e San Giovanni a Teduccio
+        \url{https://www.epsyoungminds.org/scientific-adventure-playground/}
+\end{description}
+
+\vspace*{2mm}
+\textbf{Comitato ex Convitto Monachelle}
+{\sl cittadinanza attiva} \hfill 2017 -- oggi\\
+\begin{itemize} \itemsep 1pt
+  \item Progettazione partecipata dei beni comuni, metodi di governance allargata
+  \item Dialogo con le amministrazioni, promozione proattiva di pratiche innovative
+  \item Ricerca e formazione per fundraising, strategie di valorizzazione del patrimonio relazionale
+  \item Organizzazione di eventi:
+        moderatore webinar gen 2021 \\
+        ``\textit{Governo del territorio e partecipazione civica – Quale legalità?}''
+  \item Webmaster e Social Media manager
+\end{itemize}
+
+\header{Partecipazione a seminari ed eventi}
+\textbf{Quantum Machine Learning tutorial} \hfill webinar\\
+CERN --- Lecturer: Maria Schuld (UKZN/Xanadu) \hfill feb 2021\\
+\vspace*{2mm}
+\textbf{Opportunity Matters} \hfill webinar \\
+Dottoressa Marina Corradini,
+Euro-Med Seismological Centre (EMSC)
+\hfill 28 gen 2021 \\
+\vspace*{2mm}
+\textbf{Elettronica superconduttiva: dalle basi alle applicazioni}
+\hfill webinar \\
+Dr. Roberta Caruso, ricercatrice associata del Brookhaven National Laboratory
+\hfill 15 gen 2021 \\
+\vspace*{2mm}
+\textbf{Nack, breaking the loop} \hfill Napoli, IT \\
+Evento organizzato da MSAck \hfill nov 2019 \\
+\vspace*{2mm}
+\textbf{Linux Day} \hfill Napoli, IT \\
+Evento organizzato dal NaLuG \hfill 25 ott 2019 \\
+\vspace*{2mm}
+\textbf{International Space Apps Challenge} \hfill Napoli, IT\\
+Hackathon organizzato dalla NASA
+\hfill 2019\\
+\vspace*{2mm}
+\textbf{Neutrino Revolution and Quest for \\ the Origin of the Matter Dominated Universe} \hfill Napoli, IT \\
+Prof. C.K. Jung, SUNY Distinguished Professor, Stony Brook University
+\hfill 31 mag 2018 \\
+\vspace*{2mm}
+\textbf{Verità scientifica? Cosa ci insegna una scoperta}
+\hfill Napoli, IT \\
+Dott. Luca Lista, INFN --- Sez. Napoli
+\hfill 14 mar 2018 \\
+\vspace*{2mm}
+\textbf{High Dimensional Quantum Key Distribution} \hfill Napoli, IT \\
+Daniele Cozzolino, PhD student, Tecnical University of Denmark
+\hfill 12 feb 2018 \\
+\vspace*{2mm}
+\textbf{Nack, look for your backd00r} \hfill Napoli, IT \\
+Evento organizzato da MSAck \hfill ott 2017  \\
+\vspace*{2mm}
+\textbf{Nature's optics and our understanding of light} \hfill Napoli, IT \\
+Del Prof. Michael Berry,
+H.H. Wills Physics Laboratory,
+University of Bristol (UK) \hfill 15 set 2017 \\
+\vspace*{2mm}
+\textbf{Linux Day} \hfill Napoli, IT \\
+Evento organizzato dal NaLuG \hfill 22 ott 2016 \\
+\vspace*{2mm}
+
+\end{document}
